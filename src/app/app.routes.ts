@@ -7,8 +7,14 @@ import { EmployerApplicationComponent } from './pages/employer/employer-applicat
 import { EmployerProfileComponent } from './pages/employer/employer-profile/employer-profile.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
+import { NotFoundComponent } from './src/app/pages/NotFound/not-found/not-found.component';
 
 export const routes: Routes = [
+    {
+        path:'',
+        pathMatch:'full',
+        redirectTo:'auth/login'
+    },
     {
         path:'auth/login',
         component:LoginComponent
@@ -18,7 +24,7 @@ export const routes: Routes = [
         component:SignupComponent
     },
     {
-        path:'/',
+        path:'',
         component:SingleLayoutComponent,
         children:[
             {
@@ -46,5 +52,9 @@ export const routes: Routes = [
                 component:EmployerProfileComponent
             }
         ]
+    },
+    {
+        path:'**',
+        component:NotFoundComponent
     }
 ];
