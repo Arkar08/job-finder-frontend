@@ -13,7 +13,7 @@ export const routes: Routes = [
     {
         path:'',
         pathMatch:'full',
-        redirectTo:'auth/login'
+        redirectTo:'seeker/home'
     },
     {
         path:'auth/login',
