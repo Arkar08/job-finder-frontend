@@ -7,7 +7,7 @@ import { EmployerApplicationComponent } from './pages/employer/employer-applicat
 import { EmployerProfileComponent } from './pages/employer/employer-profile/employer-profile.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { SignupComponent } from './pages/auth/signup/signup.component';
-import { NotFoundComponent } from './src/app/pages/NotFound/not-found/not-found.component';
+import { NotFoundComponent } from './pages/NotFound/not-found/not-found.component';
 
 export const routes: Routes = [
     {
